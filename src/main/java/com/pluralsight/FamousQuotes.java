@@ -30,13 +30,13 @@ public class FamousQuotes {
          while (true) {
              try{
                  String[] quotes = {"FINISH HIM! - Mortal Kombat", "It’s dangerous to go alone, take this! - The Legend of Zelda", "Thank you, Mario! But our Princess is in another castle! - Super Mario", "I used to be an adventurer like you until I took an arrow to the knee. - Skyrim", "Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka Waka - Pacman", "The cake is a lie. - Portal", "War…war never changes - Fallout", "All your base are belong to us. - Zero Wing", "Endure and survive. - The Last of Us", "Don’t make a girl a promise if you know you can’t keep it. - Halo 3"};
-                 System.out.print("Which amazing quote would you like to see? (0-9)\nQuote ");
+                 System.out.print("Which amazing quote would you like to see? (0-9)\nQuote: ");
                  int choice = scanner.nextInt();
                  scanner.nextLine();//CRLF
                  System.out.println("\n"+quotes[choice]);
                  boolean keepGoing = true;
                  while(keepGoing) {
-                     System.out.println("\nWould you like to see another quote?\n[Y] Yes\n[N] No\n[R] Random Quote");
+                     System.out.println("\nWould you like to see another quote?\n[Y] Yes\n[N] No\n[R] Random Quote\nType Here: ");
                      String another = scanner.nextLine().toUpperCase().trim();
 
                      switch (another) {
