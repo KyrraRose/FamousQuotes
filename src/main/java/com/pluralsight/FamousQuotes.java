@@ -33,10 +33,10 @@ public class FamousQuotes {
                  System.out.print("Which amazing quote would you like to see? (0-9)\nQuote: ");
                  int choice = scanner.nextInt();
                  scanner.nextLine();//CRLF
-                 System.out.println("\n"+quotes[choice]);
+                 System.out.printf("\n[ %s ]\n---",quotes[choice]);
                  boolean keepGoing = true;
                  while(keepGoing) {
-                     System.out.println("\nWould you like to see another quote?\n[Y] Yes\n[N] No\n[R] Random Quote\nType Here: ");
+                     System.out.print("\nWould you like to see another quote?\n[Y] Yes\n[N] No\n[R] Random Quote\nType Here: ");
                      String another = scanner.nextLine().toUpperCase().trim();
 
                      switch (another) {
